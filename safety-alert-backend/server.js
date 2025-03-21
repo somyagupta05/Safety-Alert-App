@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/db.js";
 import userRoutes from "./routes/userRoutes.js"; // Import routes
-
+import locationRoutes from "./routes/locationRoutes.js";
 dotenv.config();
 const app = express();
 
@@ -16,7 +16,7 @@ connectDB();
 
 // Routes
 app.use("/api/users", userRoutes); // Use user routes
-
+app.use("/api/location", locationRoutes);
 // Test API
 app.get("/", (req, res) => {
   res.send("Safety Alert API is running...");

@@ -1,17 +1,15 @@
 import mongoose from "mongoose";
 
-const userSchema = new mongoose.Schema(
-  {
-    name: { type: String, required: true },
-    phoneNumber: { type: String, required: true, unique: true },
-    emergencyContacts: [{ type: String, required: true }], // Array of phone numbers
-    location: {
-      latitude: { type: Number },
-      longitude: { type: Number },
-    },
+const UserSchema = new mongoose.Schema({
+  name: String,
+  phoneNumber: { type: String, unique: true },
+  emergencyContacts: [String],
+  location: {
+    latitude: Number,
+    longitude: Number,
+    timestamp: { type: Date, default: Date.now },
   },
-  { timestamps: true }
-);
+});
 
-const User = mongoose.model("User", userSchema);
-export default User;
+const User = mongoose.model("User", UserSchema);
+export default User;  // ✅ Ensure you're exporting the model as default
