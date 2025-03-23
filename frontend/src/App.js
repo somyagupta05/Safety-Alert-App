@@ -1,12 +1,19 @@
 import React from "react";
-import SOSButton from "./components/SOSButton";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LoginSignup from "./components/LoginSignup";
+import About from "./components/About";
 
 function App() {
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Emergency Alert System</h1>
-      <SOSButton phoneNumber="+919301615905" />
-    </div>
+    <Router>
+      <div>
+        <h1>Safety Alert App</h1>
+        <Routes>
+          <Route path="/" element={<LoginSignup />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
