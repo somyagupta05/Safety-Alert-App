@@ -5,9 +5,11 @@ import connectDB from "./config/db.js";
 import userRoutes from "./routes/userRoutes.js"; 
 import alertRoutes from "./routes/alertRoutes.js";
 import locationRoutes from "./routes/locationRoutes.js";
+import authRoutes from "./routes/authRoutes.js"; 
 dotenv.config();
 const app = express();
-
+// const authRoutes = require("./routes/authRoutes");
+// import authRoutes from "./routes/authRoutes.js"
 // Middleware
 app.use(express.json());
 app.use(cors());
@@ -16,6 +18,7 @@ app.use(cors());
 connectDB();
 
 // Routes
+app.use("/api/", authRoutes);
 app.use("/api/users", userRoutes); // Use user routes
 app.use("/api/location", locationRoutes);
 app.use("/api/alert", alertRoutes);
