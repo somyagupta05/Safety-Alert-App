@@ -17,7 +17,7 @@
 
 | Hero Section | Guidelines | About Section |
 |--------------|------------|----------------|
-| ![Hero](./public/bannr.png) | ![Guideline 1](./public/guide.png) | ![About](./public/about.png) |
+| ![Hero](.frontend/public/bannr.png) | ![Guideline 1](./public/guide.png) | ![About](./public/about.png) |
 
 > Make sure these image files exist in your `/public` folder.
 
