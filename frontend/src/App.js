@@ -19,6 +19,8 @@ function App() {
             </PrivateRoute>
           }
         />
+        {/* <Route path="/" element={<HomePage />} /> */}
+
       </Routes>
     </Router>
   );
