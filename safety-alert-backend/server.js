@@ -21,7 +21,7 @@ connectDB();
 app.use("/api/", authRoutes);
 app.use("/api/users", userRoutes); // Use user routes
 app.use("/api/location", locationRoutes);
-app.use("/api/alert", alertRoutes);
+app.use("/api", alertRoutes);
 app.use(cors({ origin: "http://localhost:3000", credentials: true }));
 
 // Test API
