@@ -3,7 +3,7 @@
 
 **SafetyAlert** is a personal emergency app built using **React** that helps users notify their emergency contacts in a single click. Whether you're walking alone, commuting late at night, or want to feel secure—SafetyAlert keeps you connected and safe.
 
-![Banner](./public/bannr.png)
+![Banner](./frontend/public/bannr.png)
 
 ## 🔒 Features
 
@@ -17,7 +17,7 @@
 
 | Hero Section | Guidelines | About Section |
 |--------------|------------|----------------|
-| ![Hero](./frontend/public/bannr.png) | ![Guideline 1](./public/guide.png) | ![About](./public/about.png) |
+| ![Hero](./frontend/public/bannr.png) | ![Guideline 1](./frontend/public/guide.png) | ![About](./frontend/public/about.png) |
 
 > Make sure these image files exist in your `/public` folder.
 
